@@ -1,5 +1,5 @@
 app_name = "interview_management_system"
-app_title = "interview_management_system"
+app_title = "interview"
 app_publisher = "Shalindra"
 app_description = "this is app"
 app_email = "shalindraaporiya23@navgurukul.org"
