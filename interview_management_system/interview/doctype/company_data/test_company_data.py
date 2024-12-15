@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestIntervew_schdule(FrappeTestCase):
+class TestCompanyData(FrappeTestCase):
 	pass

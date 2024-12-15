@@ -1,62 +1,80 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:-{####}",
- "creation": "2024-09-18 14:57:55.992493",
+ "autoname": "format:{condidate_name}",
+ "creation": "2024-11-27 10:26:35.859512",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "interview_scheduled_details_section",
   "condidate_name",
   "interviewer_name",
+  "column_break_wbxg",
   "roll_applied",
-  "column_break_xsgt",
   "interview_date",
-  "status"
+  "status",
+  "time"
  ],
  "fields": [
   {
+   "fieldname": "interview_scheduled_details_section",
+   "fieldtype": "Section Break",
+   "label": "Interview Scheduled Details"
+  },
+  {
    "fieldname": "condidate_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Condidate Name",
-   "options": "Condiate Data"
+   "options": "Condidate",
+   "reqd": 1
   },
   {
    "fieldname": "interviewer_name",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Interviewer Name",
    "options": "Interviewer data",
    "reqd": 1
   },
   {
-   "fetch_from": "condidate_name.applied_role",
-   "fieldname": "roll_applied",
-   "fieldtype": "Data",
-   "label": "Roll Applied"
+   "fieldname": "column_break_wbxg",
+   "fieldtype": "Column Break"
   },
   {
-   "fieldname": "column_break_xsgt",
-   "fieldtype": "Column Break"
+   "fetch_from": "condidate_name.role",
+   "fieldname": "roll_applied",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Roll Applied",
+   "reqd": 1
   },
   {
    "fieldname": "interview_date",
    "fieldtype": "Date",
-   "label": "Interview date"
+   "in_list_view": 1,
+   "label": "Interview Date",
+   "reqd": 1
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
-   "in_list_view": 1,
    "label": "Status",
-   "options": "Hired,\nRejected,\nIn Progress",
+   "options": "In Progress\nRejected\nShortlished",
    "reqd": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Data",
+   "label": "Time"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-18 16:07:22.718018",
+ "modified": "2024-12-14 15:54:54.905721",
  "modified_by": "Administrator",
  "module": "interview",
- "name": "Intervew_schdule",
+ "name": "Interview Scheduled",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
@@ -73,21 +91,7 @@
    "write": 1
   }
  ],
- "sort_field": "modified",
+ "sort_field": "creation",
  "sort_order": "DESC",
- "states": [
-  {
-   "color": "Green",
-   "title": "Hired"
-  },
-  {
-   "color": "Red",
-   "title": "Rejected"
-  },
-  {
-   "color": "Yellow",
-   "title": "In Progress"
-  }
- ],
- "title_field": "condidate_name"
+ "states": []
 }

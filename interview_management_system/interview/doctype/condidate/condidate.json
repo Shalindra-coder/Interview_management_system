@@ -1,16 +1,18 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{name1}",
  "creation": "2024-09-18 12:52:30.914752",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "condidate_details_section",
   "name1",
   "email",
   "contact_number",
   "exprience",
   "skills",
-  "applied_role",
+  "role",
   "column_break_trbc",
   "last_qualification",
   "address",
@@ -80,19 +82,25 @@
    "reqd": 1
   },
   {
-   "fieldname": "applied_role",
+   "fieldname": "condidate_details_section",
+   "fieldtype": "Section Break",
+   "label": "Condidate Details"
+  },
+  {
+   "fieldname": "role",
    "fieldtype": "Select",
-   "label": "Applied Role",
-   "options": "Front-end Developer,\nBeck-end Developer,\nAndroid Developer,\nfull-stack Developer",
+   "label": "Role",
+   "options": "Front-end Developer\nBeck-end Developer\nAndroid Developer\nfull-stack Developer\nReact Developer\nNode js Developer",
    "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-18 16:04:00.519523",
+ "modified": "2024-12-14 15:27:12.823282",
  "modified_by": "Administrator",
  "module": "interview",
- "name": "Condiate Data",
+ "name": "Condidate",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestCondiateData(FrappeTestCase):
+class TestCategory(FrappeTestCase):
 	pass

@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class CondiateData(Document):
+class Condidate(Document):
 	pass
